@@ -1,0 +1,37 @@
+body{
+    background: #ECF4F6;  
+}
+
+.menu{
+    background: white;
+    height: 100vh;
+}
+
+.menu-list li{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.432);
+}
+.menu-list li:first-child{
+    border-top: 1px solid rgba(128, 128, 128, 0.432);
+}
+.menu-title{
+    padding: 1.5em 3em;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+.menu-label{
+    padding: 1.1em 1.5em;
+    font-size: 0.9em;
+}
+.subtitle{
+    font-size: 0.8em;
+}
+.small-text{
+    font-weight: 700;
+    line-height: 2px;
+}
+.panel{
+    margin: 2% 0;
+}
+a{
+    text-decoration: none !important;
+}
