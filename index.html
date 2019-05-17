@@ -80,6 +80,7 @@
                     </div>
                     <div class="navbar-end">
                         <div class="navbar-item has-dropdown is-hoverable">
+                                <!-- <img src="img/male-avatar.png" alt="profile pic" class="image-rounded"> -->
                             <a class="navbar-link">Hannah Duah</a>
                         
                             <div class="navbar-dropdown">
@@ -186,9 +187,8 @@
                 <div class="tile is-vertical is-5">
                         <div class="tile">
                             <div class="tile is-parent is-vertical">
-                                <article class="tile is-child notification is-primary">
-                                <p class="title">Chart will go here</p>
-                                <p class="subtitle">Top tile</p>
+                                <article class="tile is-child notification is-white">
+                                    <canvas id="line-chart" width="200" height="100"></canvas>
                                 </article>
                                 <!-- ACTIVITIES TIMELINE TABLE -->
                                 <article class="tile is-child notification is-white">
@@ -361,4 +361,37 @@
          </div>
         </div>
   </body>
+    <script src="js/Chart.js"></script>
+    <script>
+        new Chart(document.getElementById("line-chart"), {
+        type: 'line',
+        data: {
+        labels: ["7 Apr","11 Apr","18 Apr","25 Apr","29 Apr"],
+        datasets: [{ 
+        //     data: [168,170,178,190,203,276,408,547,675,734],
+        //     // label: "Europe",
+        //     borderColor: "#3cba9f",
+        //     fill: false
+        // }, { 
+            data: [100,84,202,95,24],
+            label: "Activity Line Chart",
+            borderColor: "#3cba9f",
+            fill: false
+        // }, { 
+        //     data: [6,3,2,2,7,26,82,172,312,433],
+        //     // label: "North America",
+        //     borderColor: "#c45850",
+        //     fill: false
+        }
+        ]
+    },
+    options: {
+        title: {
+        display: false,
+        text: 'World population per region (in millions)'
+        }
+    }
+    });
+
+    </script>
 </html>
